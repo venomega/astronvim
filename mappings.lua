@@ -21,6 +21,10 @@ return {
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     -- customs
+    ["<C-s>"] = { "<esc>:w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<leader>ag"] = { "<esc>!go run %<cr>", desc = "Run Go File" },  -- change description but the same command
+    ["<leader>al"] = { "<esc>!lua %<cr>", desc = "Run Lua File" },  -- change description but the same command
+    ["<leader>ap"] = { "<esc>!perl %<cr>", desc = "Run Perl File" },  -- change description but the same command
     ["<tab>"] = {":Neotree toggle<cr>"}
   },
   t = {
